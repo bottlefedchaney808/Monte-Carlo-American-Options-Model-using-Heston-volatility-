@@ -1,1 +1,6 @@
 # Monte-Carlo-American-Options-Model-using-Heston-volatility-
+
+This code is a Python implementation of the Heston model for option pricing using Monte Carlo simulation. The Heston model is a stochastic volatility model that considers the volatility of the underlying asset to be a stochastic process, and is widely used in quantitative finance. The code takes in parameters such as the initial stock price (S0), risk-free rate (r), time to maturity (T), mean reversion speed (kappa), long-run variance (theta), implied volatility (sigma), correlation between the stock price and volatility (rho), strike price (K), number of simulation paths (N), and number of time steps (M). It generates correlated Brownian motions, and uses them to generate stock price and volatility paths. The option payoff at maturity is then calculated, and the option value is determined using the Longstaff-Schwartz algorithm for American-style options. Finally, the option value (option_value) is printed, and a 4D graph of the Heston model paths is generated using matplotlib.
+
+# To do's
+Integrate into main tool and use GPU, add 2nd level greeks printing, make pretty, make fast. 
